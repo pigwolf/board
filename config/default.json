@@ -1,0 +1,9 @@
+{
+  "recaptcha": {
+    "secret": "",
+    "url": "https://www.google.com/recaptcha/api/siteverify"
+  },
+  "nodemailer": {
+    "auth": {}
+  }
+}

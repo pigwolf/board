@@ -1,0 +1,12 @@
+{
+  "recaptcha": {
+    "secret": ""
+  },
+  "nodemailer": {
+    "service": "SendGrid",
+    "auth": {
+      "user": "",
+      "pass": ""
+    }
+  }
+}

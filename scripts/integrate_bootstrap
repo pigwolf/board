@@ -1,0 +1,17 @@
+#!/bin/bash
+
+set -e
+test -f "$1" || { echo "  Bootstrap zip file not found"; exit 0; }
+if test -d bootstrap; then
+  rm -r bootstrap
+fi
+mkdir bootstrap
+cp "$1" bootstrap/bootstrap.zip
+cd bootstrap
+unzip bootstrap.zip
+rm bootstrap.zip
+if test -d ../static/bootstrap; then
+  rm -r ../static/bootstrap
+fi
+mkdir ../static/bootstrap
+mv css fonts ../static/bootstrap

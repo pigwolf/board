@@ -1,0 +1,28 @@
+h2.uppercase {
+  letter-spacing: 10px;
+  margin-right: -10px;
+}
+
+.text-white {
+  color: white;
+}
+
+.text-bold {
+  font-weight: 600 !important;
+}
+
+.text-primary {
+  color: #13181d;
+}
+
+.no-text-decoration {
+  text-decoration: none;
+}
+
+.no-text-decoration:hover {
+  text-decoration: none;
+}
+
+.no-text-decoration:focus {
+  text-decoration: none;
+}

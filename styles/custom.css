@@ -1,0 +1,13 @@
+h1, h2, h3 {
+  font-family: "Droid serif";
+  color: #13181d;
+}
+
+body {
+  color: #13181d;
+  font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+.jumbotron {
+  background-color: inherit;
+}

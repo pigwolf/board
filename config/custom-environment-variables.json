@@ -1,0 +1,11 @@
+{
+  "recaptcha": {
+    "secret": "RECAPTCHA_SECRET"
+  },
+  "nodemailer": {
+    "auth": {
+      "user": "SENDGRID_USERNAME",
+      "pass": "SENDGRID_PASSWORD"
+    }
+  }
+}
