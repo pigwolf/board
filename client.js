@@ -1,7 +1,7 @@
 import 'babel-polyfill';
 import React from 'react';
 import ReactDOM from 'react-dom';
-import { Router, IndexRoute, Route, browserHistory } from 'react-router';
+import { Router, IndexRoute, Route, hashHistory } from 'react-router';
 import { createStore, applyMiddleware } from 'redux';
 import { Provider } from 'react-redux';
 import createSagaMiddleware from 'redux-saga';
@@ -16,7 +16,7 @@ const store = createStore(reduce, applyMiddleware(createSagaMiddleware(saga)));
 
 ReactDOM.render(
   <Provider store={store}>
-    <Router onUpdate={() => window.scrollTo(0, 0)} history={browserHistory}>
+    <Router onUpdate={() => window.scrollTo(0, 0)} history={hashHistory}>
       <Route path="/" component={App}>
         <IndexRoute component={Frontdoor} />
         <Route path="/offers/new" component={NewOffer} />
