@@ -1,9 +1,0 @@
-#!/bin/bash
-
-export NODE_PATH=.
-
-find . -path "**/*_test.js" ! -path './node_modules/*' \
-  | xargs tape | tap -
-
-find . -path "**/*_test.babel.js" -or -path '**/*_test.jsx' ! -path './node_modules/*' \
-  | xargs tape -r babel-core/register "$@" | tap -
